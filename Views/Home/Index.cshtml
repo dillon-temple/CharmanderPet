@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="Stats">
+    <div class="stat">Fullness: @ViewBag.Charmander.Fullness</div>
+    <div class="stat">Happiness: @ViewBag.Charmander.Happiness</div>
+    <div class="stat">Meals: @ViewBag.Charmander.Meals</div>
+    <div class="stat">Energy: @ViewBag.Charmander.Energy</div>
+</div>
+<div class="Creature_Pen">
+    <div class="Creature"></div>
+    <div class="Creature_Message">@ViewBag.Message</div>
+</div>
+@if(ViewBag.ShowDiv == false){
+
+<div class="Button_Bar">
+    <a class="button" href="Feed">Feed</a>
+    <a class="button" href="Play">Play</a>
+    <a class="button" href="Work">Work</a>
+    <a class="button" href="Sleep">Sleep</a>
+</div>
+}
+
+@if(ViewBag.ShowDiv == true){
+    <div class="Button_Bar">
+        <a class="button" href="Restart">Restart</a>
+    </div>
+}

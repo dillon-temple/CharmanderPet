@@ -1,0 +1,76 @@
+﻿* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12.5pt;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height:100vh;
+  width:100vw;
+  background-color:black;
+}
+
+main{
+  height:95%;
+  width:95%;
+  background-color:white;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+
+.Stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat{
+  margin:1em;
+}
+
+.Creature_Pen{
+  border:2px solid black;
+  width:92%;
+  height:75%;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+
+.Creature{
+    margin:3em;
+    height:50%;
+    width:25%;
+    background-size:contain;
+    background-image:url("char.png");
+    background-repeat: no-repeat;
+}
+
+.Button_Bar{
+  width:80%;
+  height:15%;
+  background-color:seagreen;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:2em;
+}
+
+.button{
+  background-color:black;
+  height:80%;
+  width: 20%;
+  margin:1em;
+  border:1px white solid;
+  border-radius:6px;
+  color:white;
+  font-size:16pt;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
